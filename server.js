@@ -15,8 +15,8 @@ MongoClient.connect(dbConnectionString)
         console.log('Connected to Database')
         db = client.db(dbName)
         collection = db.collection('CRUD-QUOTES')
-    })
- 
+    }) 
+   
 app.set('view engine', 'ejs')
 app.use(express.static('public')) 
 app.use(express.urlencoded({extended:true}))
